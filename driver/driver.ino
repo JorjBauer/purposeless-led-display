@@ -19,7 +19,7 @@
 #define TOTAL_LEDS (LEDS_PER_RING*NUM_RINGS)
 
 #define WS2812PIN 6
-#define CTSPIN 4
+#define CTSPIN 3
 #define RAMPIN 10 // /SS on SPI RAM
 
 // Serial SRAM commands

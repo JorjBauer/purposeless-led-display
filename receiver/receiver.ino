@@ -30,7 +30,7 @@ unsigned long tempTimer = 0;
 
 #define NODEID      3
 #define NETWORKID   212
-#define FREQUENCY RF69_433MHZ
+#define FREQUENCY RF69_915MHZ
 #define IS_RFM69HW  //uncomment only for RFM69HW! Leave out if you have RFM69W!
 #ifdef DEFAULTKEY
   #define ENCRYPTKEY DEFAULTKEY

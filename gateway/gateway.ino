@@ -12,16 +12,16 @@
 // Standard RFM69 radio configuration
 #define NODEID        1
 #define NETWORKID     212
-#define FREQUENCY     RF69_433MHZ
-// enable this only if you're using an RFM69HW; enables high-power transmit.
-//#define IS_RFM69HW
+#define FREQUENCY     RF69_915MHZ
+// ENCRYPTKEY must be 16 chars long. Or comment out for cleartext transmission.
 #ifdef DEFAULTKEY
   #define ENCRYPTKEY DEFAULTKEY
 #else
   #pragma message("Default encryption key not found; using compiled-in default")
   #define ENCRYPTKEY "sampleEncryptKey"
 #endif
-
+// enable this only if you're using an RFM69HW; enables high-power transmit.
+//#define IS_RFM69HW  
 
 // Constants for wireless programming
 #define ACK_TIME    50                    // ACK time for Moteino programming
